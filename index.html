@@ -17,13 +17,15 @@
 </head>
 
 <body>
-  <form id="form1">
-    <label> Title : </label> <input type="text" name="title"/></br>
-    <label> Baseline : </label> <input type="text" name="baseline" label="baseline"/></br>
-    <label> Description : </label> <input type="text" name="description" label="description"/>
-  </form>
+    <label> Title : </label> <input type="text" name="title" id="title_form"/></br>
+    <label> Baseline : </label> <input type="text" name="baseline" id="baseline_form"/></br>
+    <label> Description : </label> <input type="text" name="description" id="desc_form"/>
 
-  <button type="submit" form="form1" value="Submit">Envoyer</button>
+  <button onclick="htmlManager.getInput()">Envoyer</button>
+
+  <div id="card">
+
+  </div>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
